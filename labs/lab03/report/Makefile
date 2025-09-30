@@ -1,8 +1,10 @@
-all:
-	-@quarto render
+        report.pdf: report.pdf
+            gcc report.pdf.c -o report.pdf
 
-clean:
-	-rm -rf _output
+        clean:
+            rm -f report.pdf
+        hello: report.doct
+            gcc report.doct.c -o report.doct
 
-cleanall: clean
-	-rm -rf .quarto
+        clean:
+            rm -f report.doct
